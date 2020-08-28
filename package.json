@@ -1,8 +1,8 @@
 {
-    "name": "trendincy",
+    "name": "trendincy.api",
     "version": "1.0.0",
-    "main": "server.ts",
-    "repository": "https://github.com/matthew-heyner/trendincy.git",
+    "main": "server.js",
+    "repository": "https://github.com/matthew-heyner/trendincy.api.git",
     "author": "Matthew Heyner <mheyner@gmail.com>",
     "license": "MIT",
     "engines": {
