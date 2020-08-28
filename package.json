@@ -6,7 +6,8 @@
     "author": "Matthew Heyner <mheyner@gmail.com>",
     "license": "MIT",
     "engines": {
-        "node": "14.x"
+        "node": "14.x",
+        "yarn": "1.x"
     },
     "scripts": {
         "start": "nodemon server.ts",
