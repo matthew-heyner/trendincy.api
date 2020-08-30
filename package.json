@@ -1,7 +1,7 @@
 {
     "name": "trendincy.api",
     "version": "1.0.0",
-    "main": "server.js",
+    "main": "server.ts",
     "repository": "https://github.com/matthew-heyner/trendincy.api.git",
     "author": "Matthew Heyner <mheyner@gmail.com>",
     "license": "MIT",
@@ -10,8 +10,7 @@
         "yarn": "1.x"
     },
     "scripts": {
-        "start": "node server.js",
-        "start-dev": "nodemon server.ts",
+        "start": "nodemon server.ts localhost 8080",
         "build": "tsc"
     },
     "dependencies": {
