@@ -1,0 +1,27 @@
+{
+    "trends": [{
+        "name": "#CBLoL",
+        "url": "http://twitter.com/search?q=%23CBLoL",
+        "promoted_content": null,
+        "query": "%23CBLoL",
+        "tweet_volume": 13779
+    }, {
+        "name": "Everton Ribeiro",
+        "url": "http://twitter.com/search?q=%22Everton+Ribeiro%22",
+        "promoted_content": null,
+        "query": "%22Everton+Ribeiro%22",
+        "tweet_volume": 41186
+    }, {
+        "name": "Gabigol",
+        "url": "http://twitter.com/search?q=Gabigol",
+        "promoted_content": null,
+        "query": "Gabigol",
+        "tweet_volume": 24284
+    }],
+    "as_of": "2020-09-05T21:08:01Z",
+    "created_at": "2020-09-05T21:04:21Z",
+    "locations": [{
+        "name": "Worldwide",
+        "woeid": 1
+    }]
+}
