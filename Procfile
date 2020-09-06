@@ -1,1 +1,1 @@
-web: yarn run serve
+web: NODE_ENV=production & node src/server.js
