@@ -1,15 +1,7 @@
 const dotenv = require('dotenv');
 const production = process.env.NODE_ENV === 'production';
 const express = require('express');
-const path = require('path');
-const fs = require('fs');
-var INDEX;
-if (!production) {
-    dotenv.config();
-    INDEX = fs.readFileSync(path.resolve(__dirname, '.', 'index.html'), {
-        encoding: 'utf8',
-    });
-}
+if (!production) dotenv.config();
 const trends = require('./authentication');
 
 const PORT = process.env.PORT || 8080;
@@ -27,18 +19,8 @@ async function main() {
         await trends.getTrends(
             `https://api.twitter.com/1.1/trends/place.json?id=${req.params['woeid']}`,
             (result) => {
-                if (!production) res.send(devTest(result));
-                else res.send(result);
+                res.send(result);
             }
         );
     });
-}
-
-function devTest(result) {
-    return INDEX.replace(
-        'CONTENT',
-        `<h1>Trends</h1>
-        <br>
-        <p>${result}</p>`
-    );
 }
