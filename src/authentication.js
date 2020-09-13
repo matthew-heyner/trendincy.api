@@ -23,6 +23,6 @@ async function getTrends(url, callback) {
     oauthConsumer.get(url, ACCESS_TOKEN, ACCESS_TOKEN_SECRET, (error, data) => {
         if (error) console.error(error);
         data = JSON.parse(data);
-        callback(JSON.stringify(data, 0, 2));
+        callback(JSON.stringify(data, ['trends', 'name', 'tweet_volume'], 2));
     });
 }
