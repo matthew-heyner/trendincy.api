@@ -2,7 +2,6 @@
 version: 0.2
 
 env:
-  shell: shell-tag
   parameter-store:
     CONSUMER_KEY_PLACEHOLDER: "CONSUMER_KEY"
     CONSUMER_SECRET_PLACEHOLDER: "CONSUMER_SECRET"
