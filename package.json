@@ -6,7 +6,7 @@
     "author": "Matthew Heyner <mheyner@gmail.com>",
     "license": "MIT",
     "engines": {
-        "node": "16.x",
+        "node": "12.x",
         "yarn": "1.x"
     },
     "scripts": {
