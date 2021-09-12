@@ -23,6 +23,8 @@ phases:
     commands:
       - echo Build started.
       - echo Running build.
+      - yarn build
+      - echo Starting node server.
       - yarn start
   post_build:
     commands:
