@@ -1,6 +1,6 @@
 import { config } from 'dotenv';
 import express from 'express';
-import trendRouter from './src/routers/country-trends';
+import countryTrendRouter from './src/routers/country-trends';
 import errorHandler from './src/middleware/errorHandler';
 
 
@@ -20,7 +20,7 @@ app.listen(PORT, () => {
     console.log(`listening on ${URI}:${PORT}`);
 });
 
-app.use('/trends/:woeid', trendRouter);
+app.use('/trends/:woeid', countryTrendRouter);
 
 app.use((req, res, next) => {
   next(createError.NotFound());
