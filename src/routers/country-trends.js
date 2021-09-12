@@ -1,11 +1,10 @@
-  
-import { Router } from 'express';
-import { TrendController } from 'trends'
+const express = require('express');
+const CountryTrendsController = require('../controllers/country-trends')
 
-const countryTrendRouter = Router();
+const CountryTrendRouter = express.Router();
 
-countryTrendRouter.get('/trends/:woeid', async (req, res) => {
-    await getTrendsByCountryId(
+CountryTrendRouter.get('/trends/:woeid', async (req, res) => {
+    CountryTrendsController(
         `https://api.twitter.com/1.1/trends/place.json?id=${req.params['woeid']}`,
         (result) => {
             res.send(result);
@@ -13,4 +12,4 @@ countryTrendRouter.get('/trends/:woeid', async (req, res) => {
     );
 });
 
-export default countryTrendRouter;
+module.exports = CountryTrendRouter;

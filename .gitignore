@@ -23,5 +23,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+/bin
+/.vscode
+
 # envinronment variables
 .env
+.example.env
